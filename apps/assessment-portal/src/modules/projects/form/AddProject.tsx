@@ -8,7 +8,7 @@ import {
 } from "@root/components/AsyncForm";
 import validationSchema from "./validationSchema";
 import { Project, ProjectInput } from "../interfaces";
-import { v4 as uuid } from "uuid";
+import { uuid } from "uuidv4";
 import { FaCheck, FaTrashCan } from "react-icons/fa6";
 import ButtonWithIcon from "@root/components/ButtonWithIcon";
 
@@ -127,7 +127,7 @@ const AddProject = ({ project, onSubmitSuccess, onDelete }: Props) => {
 										className="border bg-dark-100 text-white border-slate-500 rounded-md w-fit py-1 px-3 items-center flex"
 									>
 										<FaCheck />
-										{Boolean(project) ? "Update" : "Add"}
+										{project ? "Update" : "Add"}
 									</SubmitButton>
 									{project && onDelete ? (
 										<ButtonWithIcon

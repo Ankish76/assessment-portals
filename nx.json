@@ -17,6 +17,9 @@
   "targetDefaults": {
     "dev": {
       "dependsOn": ["symbolic-link-delete", "symbolic-link-create"]
+    },
+    "build": {
+      "dependsOn": ["symbolic-link-delete", "symbolic-link-create"]
     }
   },
   "plugins": [

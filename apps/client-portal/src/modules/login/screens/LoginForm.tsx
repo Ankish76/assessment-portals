@@ -1,3 +1,4 @@
+/* eslint-disable no-control-regex */
 "use client";
 import { useCallback, useEffect } from "react";
 import { Form, SubmitButton, TextInputField } from "@root/components/AsyncForm";
@@ -48,7 +49,7 @@ const LoginForm = () => {
 	}, []);
 
 	useEffect(() => {
-		const adminUserData = localStorage.getItem("AssessmentUserData");
+		const adminUserData = localStorage.getItem("adminUserData");
 		if (
 			user?.UniqueId ||
 			(adminUserData && JSON.parse(adminUserData)?.UniqueId)
@@ -98,7 +99,6 @@ const LoginForm = () => {
 								onSubmit={onLogin}
 								validateOnBlur
 								name="login-form"
-								onSubmitSuccess={() => {}}
 								initialValues={initialValues()}
 								validationSchema={validationSchema()}
 							>

@@ -1,4 +1,4 @@
-import { v4 as uuid } from "uuid";
+import { uuid } from "uuidv4";
 import { Form, SubmitButton, TextInputField } from "@root/components/AsyncForm";
 import { Role } from "../interfaces";
 import validationSchema from "./validationSchema";

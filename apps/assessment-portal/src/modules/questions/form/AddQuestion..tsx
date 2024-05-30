@@ -3,7 +3,7 @@ import { useStore } from "@lib/zustand/store";
 import { Form, SubmitButton, TextInputField } from "@root/components/AsyncForm";
 import validationSchema from "./validationSchema";
 import { Question } from "../interfaces";
-import { v4 as uuid } from "uuid";
+import { uuid } from "uuidv4";
 import { FaCheck, FaTrashCan } from "react-icons/fa6";
 import ButtonWithIcon from "@root/components/ButtonWithIcon";
 
@@ -73,7 +73,7 @@ const AddQuestion = ({ question, onSubmitSuccess, onDelete }: Props) => {
 										className="border bg-dark-100 text-white border-slate-500 rounded-md w-fit py-1 px-3 items-center flex"
 									>
 										<FaCheck />
-										{Boolean(question) ? "Update" : "Add"}
+										{question ? "Update" : "Add"}
 									</SubmitButton>
 									{question && onDelete ? (
 										<ButtonWithIcon

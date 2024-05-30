@@ -7,7 +7,7 @@ import {
 import React, { useCallback } from "react";
 import validationSchema from "./validationSchema";
 import { User } from "../interfaces";
-import { v4 as uuid } from "uuid";
+import { uuid } from "uuidv4";
 import { FaCheck, FaTrashCan } from "react-icons/fa6";
 import ButtonWithIcon from "@root/components/ButtonWithIcon";
 import { useStore } from "@lib/zustand/store";

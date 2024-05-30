@@ -1,37 +1,34 @@
 {
-  "name": "client-portal",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/client-portal",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project client-portal --web",
-  "targets": {
-    "dev:turbo": {
-      "command": "next dev apps/client-portal --turbo"
-    },
-    "build": {
-      "command": "nx run client-portal:symbolic-link-delete && nx run client-portal:symbolic-link-create && nx run client-portal:build"
-    },
-    "symbolic-link-delete": {
-      "command": "node apps/client-portal/symbolic-link-delete.js"
-    },
-    "symbolic-link-create": {
-      "command": "node apps/client-portal/symbolic-link-create.js"
-    },
-    "analyze": {
-      "command": "cross-env ANALYZE=true next build apps/client-portal"
-    },
-    "analyze-server": {
-      "command": "cross-env BUNDLE_ANALYZE=server next build apps/client-portal"
-    },
-    "analyze-browser": {
-      "command": "cross-env BUNDLE_ANALYZE=browser next build apps/client-portal"
-    },
-    "format": {
-      "command": "prettier --write apps/client-portal/src apps/client-portal/client" 
-    },
-    "postbuild": {
-      "command": "next-sitemap --config apps/client-portal/next-sitemap-config.js"
-    }
-  }
+	"name": "client-portal",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/client-portal",
+	"projectType": "application",
+	"tags": [],
+	"// targets": "to see all targets run: nx show project client-portal --web",
+	"targets": {
+		"dev:turbo": {
+			"command": "next dev apps/client-portal --turbo"
+		},
+		"symbolic-link-delete": {
+			"command": "node apps/client-portal/symbolic-link-delete.js"
+		},
+		"symbolic-link-create": {
+			"command": "node apps/client-portal/symbolic-link-create.js"
+		},
+		"analyze": {
+			"command": "cross-env ANALYZE=true next build apps/client-portal"
+		},
+		"analyze-server": {
+			"command": "cross-env BUNDLE_ANALYZE=server next build apps/client-portal"
+		},
+		"analyze-browser": {
+			"command": "cross-env BUNDLE_ANALYZE=browser next build apps/client-portal"
+		},
+		"format": {
+			"command": "prettier --write apps/client-portal/src apps/client-portal/client"
+		},
+		"postbuild": {
+			"command": "next-sitemap --config apps/client-portal/next-sitemap-config.js"
+		}
+	}
 }

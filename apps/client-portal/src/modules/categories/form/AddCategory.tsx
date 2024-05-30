@@ -3,7 +3,7 @@ import { useStore } from "@lib/zustand/store";
 import { Form, SubmitButton, TextInputField } from "@root/components/AsyncForm";
 import validationSchema from "./validationSchema";
 import { Category } from "../interfaces";
-import { v4 as uuid } from "uuid";
+import { uuid } from "uuidv4";
 import { FaCheck, FaTrashCan } from "react-icons/fa6";
 import ButtonWithIcon from "@root/components/ButtonWithIcon";
 

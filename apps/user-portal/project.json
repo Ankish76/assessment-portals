@@ -9,9 +9,6 @@
 		"dev:turbo": {
 			"command": "next dev apps/user-portal --turbo"
 		},
-		"build": {
-			"command": "nx run user-portal:symbolic-link-delete && nx run user-portal:symbolic-link-create && nx run user-portal:build"
-		},
 		"symbolic-link-delete": {
 			"command": "node apps/user-portal/symbolic-link-delete.js"
 		},
