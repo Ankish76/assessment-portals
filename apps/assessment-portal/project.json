@@ -1,0 +1,36 @@
+{
+  "name": "assessment-portal",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/assessment-portal",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "dev:turbo": {
+      "command": "next dev apps/assessment-portal --turbo"
+    },
+    "build": {
+      "command": "nx run assessment-portal:symbolic-link-delete && nx run assessment-portal:symbolic-link-create"
+    },
+    "symbolic-link-delete": {
+      "command": "node apps/assessment-portal/symbolic-link-delete.js"
+    },
+    "symbolic-link-create": {
+      "command": "node apps/assessment-portal/symbolic-link-create.js"
+    },
+    "analyze": {
+      "command": "cross-env ANALYZE=true next build apps/assessment-portal"
+    },
+    "analyze-server": {
+      "command": "cross-env BUNDLE_ANALYZE=server next build apps/assessment-portal"
+    },
+    "analyze-browser": {
+      "command": "cross-env BUNDLE_ANALYZE=browser next build apps/assessment-portal"
+    },
+    "format": {
+      "command": "prettier --write apps/assessment-portal/src apps/assessment-portal/client" 
+    },
+    "postbuild": {
+      "command": "next-sitemap --config next-sitemap-config.js apps/assessment-portal"
+    }
+  }
+}

@@ -1,0 +1,485 @@
+{
+    "state": {
+        "user": {
+            "UniqueId": "9e326855-d266-41c7-b820-5b4026b38b62",
+            "ClientId": "Finilio",
+            "Fullname": "Peter Borg11",
+            "Email": "Peter.Borg@gmail.com",
+            "Password": "0fb0b37ae7f74e677ff48e9b2095ff291f6e199717d5b1771b89332f00fea752ae4833f53e5bcb5ec05cdd4a22111d773bf37554f762022bcb73300c78bc4f20",
+            "Phone": "798-987-8765",
+            "CreatedDateTime": "2024-01-13 20:25:35.568103+00:00",
+            "IsActive": true
+        },
+        "loginSubmitting": false,
+        "loginError": "",
+        "projects": [
+            {
+                "UniqueId": "e8d95bef-4a9f-4da6-a011-998ca06364f0",
+                "ClientId": "Finilio",
+                "ProjectId": "b56b808f-7a84-4fea-bfc7-958dd6a827f7",
+                "ProjectName": "ProjectTracker",
+                "ProjectDesc": "Project Progress Tracking Tool",
+                "UserId": "9e326855-d266-41c7-b820-5b4026b38b62",
+                "RoleId": "2fa0d198-76e1-49e1-bb8a-5dc4cda9c3a5"
+            },
+            {
+                "UniqueId": "e4254854-76ec-402c-a98e-72e7155c5cac",
+                "ClientId": "Finilio",
+                "ProjectId": "0ae0e680-f244-414a-9821-c112b67a9b0a",
+                "ProjectName": "Project Management",
+                "ProjectDesc": "Project ManagementTool",
+                "UserId": "9e326855-d266-41c7-b820-5b4026b38b62",
+                "RoleId": "2fa0d198-76e1-49e1-bb8a-5dc4cda9c3a5"
+            }
+        ],
+        "projectData": {
+            "UniqueId": "e8d95bef-4a9f-4da6-a011-998ca06364f0",
+            "ClientId": "Finilio",
+            "ProjectId": "b56b808f-7a84-4fea-bfc7-958dd6a827f7",
+            "ProjectName": "ProjectTracker",
+            "ProjectDesc": "Project Progress Tracking Tool",
+            "UserId": "9e326855-d266-41c7-b820-5b4026b38b62",
+            "RoleId": "2fa0d198-76e1-49e1-bb8a-5dc4cda9c3a5"
+        },
+        "roleCategories": [
+            {
+                "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                "Category": "Development Process"
+            },
+            {
+                "CategoryId": "3cf7fd18-2a46-4a97-bc45-eb4af7c1c06f",
+                "Category": "Maintenance"
+            },
+            {
+                "CategoryId": "b6a48f34-c224-4fd0-ab5a-c4538fb6b490",
+                "Category": "Business Mission and Goals"
+            },
+            {
+                "CategoryId": "86d6bbf7-7367-4e53-8492-b7e292a4665c",
+                "Category": "Organization Management"
+            },
+            {
+                "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                "Category": "Project Management"
+            },
+            {
+                "CategoryId": "6b24bffd-a908-4113-bc8f-f72869d48600",
+                "Category": "Project Team"
+            },
+            {
+                "CategoryId": "d166a004-92e3-430e-8d0a-de05976bbee8",
+                "Category": "Development Environment"
+            },
+            {
+                "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                "Category": "Deployment"
+            },
+            {
+                "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                "Category": "Specification and Design"
+            },
+            {
+                "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                "Category": "Project Parameters"
+            },
+            {
+                "CategoryId": "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7",
+                "Category": "Customer/User"
+            },
+            {
+                "CategoryId": "c628e1f3-0363-434c-bfd9-f46e43226a2e",
+                "Category": "Decision Drivers"
+            }
+        ],
+        "categoryQuestions": {
+            "86d6bbf7-7367-4e53-8492-b7e292a4665c": [
+                {
+                    "UniqueId": "fbdbaa56-9a5a-408d-b619-5183db68199b",
+                    "ClientId": "Finilio",
+                    "CategoryId": "86d6bbf7-7367-4e53-8492-b7e292a4665c",
+                    "Question": "Organization Stability"
+                },
+                {
+                    "UniqueId": "63a9c423-5089-4a48-af45-76be80216f57",
+                    "ClientId": "Finilio",
+                    "CategoryId": "86d6bbf7-7367-4e53-8492-b7e292a4665c",
+                    "Question": "Organizational Roles and Rresponsibilities"
+                },
+                {
+                    "UniqueId": "fad65a5f-a061-41fc-b911-b6a452307951",
+                    "ClientId": "Finilio",
+                    "CategoryId": "86d6bbf7-7367-4e53-8492-b7e292a4665c",
+                    "Question": "Executive Involvement"
+                }
+            ],
+            "3cf7fd18-2a46-4a97-bc45-eb4af7c1c06f": [
+                {
+                    "UniqueId": "289a46dd-8672-4259-9f9e-6f346af747c3",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3cf7fd18-2a46-4a97-bc45-eb4af7c1c06f",
+                    "Question": "Design Complexity"
+                },
+                {
+                    "UniqueId": "fbd61f50-c1c4-4b72-a960-3bc17cb440cf",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3cf7fd18-2a46-4a97-bc45-eb4af7c1c06f",
+                    "Question": "Support Personnel"
+                },
+                {
+                    "UniqueId": "ceaf7d93-0653-4759-942e-74a3a2c1e778",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3cf7fd18-2a46-4a97-bc45-eb4af7c1c06f",
+                    "Question": "Vendor Support"
+                }
+            ],
+            "b6a48f34-c224-4fd0-ab5a-c4538fb6b490": [
+                {
+                    "UniqueId": "39c5f816-8c23-4471-a19f-5d15afe4ad69",
+                    "ClientId": "Finilio",
+                    "CategoryId": "b6a48f34-c224-4fd0-ab5a-c4538fb6b490",
+                    "Question": "Project Fit to Customer Organization(s)"
+                },
+                {
+                    "UniqueId": "dd64d9db-780d-44d8-8d37-d987ead0a831",
+                    "ClientId": "Finilio",
+                    "CategoryId": "b6a48f34-c224-4fd0-ab5a-c4538fb6b490",
+                    "Question": "Project Fit to Provider Organization"
+                },
+                {
+                    "UniqueId": "a8f9bcda-949a-421d-9aaf-9917b871b481",
+                    "ClientId": "Finilio",
+                    "CategoryId": "b6a48f34-c224-4fd0-ab5a-c4538fb6b490",
+                    "Question": "Workflow"
+                }
+            ],
+            "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6": [
+                {
+                    "UniqueId": "f7b52b83-7a4c-408c-a293-273dda5e86ce",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Alternative Analysis"
+                },
+                {
+                    "UniqueId": "72b97442-a157-4fa8-bea0-089ed47ddd3e",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Commitment Process"
+                },
+                {
+                    "UniqueId": "7873646c-86b6-4e13-a6ad-229e34882324",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Quality Assurance Approach"
+                },
+                {
+                    "UniqueId": "03c06ed9-af8b-490d-8284-9f350c6d40c6",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Development Documentation"
+                },
+                {
+                    "UniqueId": "b93e9b2a-7ffe-43f9-be4f-ea7e31ee4608",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Issues Tracking"
+                },
+                {
+                    "UniqueId": "93dbb59e-17ea-40cd-b2ab-f62cf764c6f2",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Lessions Learned"
+                },
+                {
+                    "UniqueId": "11403f21-1d58-411e-a8d5-b5ef2cff9ab0",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "Question": "Implementaion/Development Methodology"
+                }
+            ],
+            "6b24bffd-a908-4113-bc8f-f72869d48600": [
+                {
+                    "UniqueId": "f3f3f362-afb3-489c-9444-a578d9de6c89",
+                    "ClientId": "Finilio",
+                    "CategoryId": "6b24bffd-a908-4113-bc8f-f72869d48600",
+                    "Question": "Team Member Availability"
+                },
+                {
+                    "UniqueId": "e36653ff-f86b-4bf8-a97a-ad1094072d5a",
+                    "ClientId": "Finilio",
+                    "CategoryId": "6b24bffd-a908-4113-bc8f-f72869d48600",
+                    "Question": "Mix of Team Skills"
+                },
+                {
+                    "UniqueId": "6fa9f7ea-f3d8-4d3a-9a14-a26ea3d0c873",
+                    "ClientId": "Finilio",
+                    "CategoryId": "6b24bffd-a908-4113-bc8f-f72869d48600",
+                    "Question": "Project Team Productivity"
+                }
+            ],
+            "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2": [
+                {
+                    "UniqueId": "f47a1749-59ab-44aa-be56-cb8b14c12707",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Solution Capacity/Scalability"
+                },
+                {
+                    "UniqueId": "a9e4012c-9b71-4018-bdf9-0fe7c4e57711",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Customer Service Impact"
+                },
+                {
+                    "UniqueId": "e92ad302-f0bb-4a31-b229-8f0c95149729",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Deployment Approach"
+                },
+                {
+                    "UniqueId": "63094cc1-7555-4a06-a60e-7e9b2f2487ea",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "External Interfaces"
+                },
+                {
+                    "UniqueId": "72e53209-beb9-40b8-8163-66e70b21efe1",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Reporting and Analytics"
+                },
+                {
+                    "UniqueId": "12fd6fc5-571a-48e1-bab2-8d98dc41a31f",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Data Controls"
+                },
+                {
+                    "UniqueId": "6b7aa40f-3650-4803-9805-a3d1765d9436",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Data Model"
+                },
+                {
+                    "UniqueId": "56879e7e-56a1-46f0-be39-b1b67d550870",
+                    "ClientId": "Finilio",
+                    "CategoryId": "0434d8fc-ab1c-405d-a9ca-a938ad3fd0b2",
+                    "Question": "Business Continuity Plan/ Disaster Recovery Plan"
+                }
+            ],
+            "d166a004-92e3-430e-8d0a-de05976bbee8": [
+                {
+                    "UniqueId": "8c1db04b-049d-4242-95ba-ea278f2f2792",
+                    "ClientId": "Finilio",
+                    "CategoryId": "d166a004-92e3-430e-8d0a-de05976bbee8",
+                    "Question": "Physical Facilities"
+                },
+                {
+                    "UniqueId": "be7ba6b4-b221-45c8-a816-a93f6575c563",
+                    "ClientId": "Finilio",
+                    "CategoryId": "d166a004-92e3-430e-8d0a-de05976bbee8",
+                    "Question": "Hardware Platform"
+                },
+                {
+                    "UniqueId": "360b9efe-6b3b-4327-b195-9fa430cccb32",
+                    "ClientId": "Finilio",
+                    "CategoryId": "d166a004-92e3-430e-8d0a-de05976bbee8",
+                    "Question": "Tools Availability"
+                }
+            ],
+            "45cb4dd7-0a46-4d65-bbd1-a9017e188336": [
+                {
+                    "UniqueId": "e7826d35-aa44-4b4f-963f-996fa51f95f7",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Definition of the Project"
+                },
+                {
+                    "UniqueId": "a98d416f-973e-4082-889e-3ddea771a015",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Project Objectives"
+                },
+                {
+                    "UniqueId": "35945b0d-87ce-414b-8585-577030b79b65",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Leadership"
+                },
+                {
+                    "UniqueId": "59c8289e-25e1-44be-bbbd-d0507b679f5b",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Project Management Approach"
+                },
+                {
+                    "UniqueId": "95b71a79-879f-43c7-b1f3-da9ac869eaef",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Project Management Communication"
+                },
+                {
+                    "UniqueId": "06b56e16-d4a5-4610-a052-b9d0cd9ca98e",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Project Manager Authority"
+                },
+                {
+                    "UniqueId": "d1422347-233d-4f3a-9c6d-7ab5a231368c",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Support of the Project Manager"
+                },
+                {
+                    "UniqueId": "0574755c-b0b3-4969-90e5-4c3d33b59d24",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Governance"
+                },
+                {
+                    "UniqueId": "1e6bfb99-976f-4ab6-a84d-b77a41989ddb",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Risks and Issues Management"
+                },
+                {
+                    "UniqueId": "23414988-3901-43dd-a85f-675c7f3e3d34",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Vendor Management"
+                },
+                {
+                    "UniqueId": "4f635daf-0e4e-466b-9008-fd69e15ab8b9",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Sourcing"
+                },
+                {
+                    "UniqueId": "ec82ecee-47a0-4b8a-a374-b124d9b033e8",
+                    "ClientId": "Finilio",
+                    "CategoryId": "45cb4dd7-0a46-4d65-bbd1-a9017e188336",
+                    "Question": "Documentation/Configuration Management"
+                }
+            ],
+            "54747810-6e1e-4c6e-a8bb-9f8678e71e9b": [
+                {
+                    "UniqueId": "2e6c131e-9b57-40fe-9c87-a9a847635f7c",
+                    "ClientId": "Finilio",
+                    "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                    "Question": "Requirements Complete and Clear"
+                },
+                {
+                    "UniqueId": "5971a5ba-47be-4f97-b7bf-72af37ed8c04",
+                    "ClientId": "Finilio",
+                    "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                    "Question": "Testability"
+                },
+                {
+                    "UniqueId": "e6d27c26-a8be-4e25-8468-29ac97e7743e",
+                    "ClientId": "Finilio",
+                    "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                    "Question": "Implementation Difficulty"
+                },
+                {
+                    "UniqueId": "f4955e7d-c16c-4063-bee8-e643f845ade0",
+                    "ClientId": "Finilio",
+                    "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                    "Question": "Solution Dependencies"
+                },
+                {
+                    "UniqueId": "fd195b37-fc2b-4a6e-9fd1-f60d9a48077a",
+                    "ClientId": "Finilio",
+                    "CategoryId": "54747810-6e1e-4c6e-a8bb-9f8678e71e9b",
+                    "Question": "Security Requirements"
+                }
+            ],
+            "3418af77-3f4b-4c4a-b86b-d7eabafa2024": [
+                {
+                    "UniqueId": "5a6fbd6e-6fd7-4cd7-ba76-3cfa3224288b",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                    "Question": "Budget & Resource Size"
+                },
+                {
+                    "UniqueId": "a025bb1a-b8ac-463c-a421-ee3b143a7915",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                    "Question": "Cost Controls"
+                },
+                {
+                    "UniqueId": "5bae1de4-fcb5-4034-bc9d-8923728b2dd7",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                    "Question": "Delivery Commitment"
+                },
+                {
+                    "UniqueId": "fdd68455-270b-40a5-b707-0b22e78ce3ef",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                    "Question": "Program Schedule"
+                },
+                {
+                    "UniqueId": "e4b6bfbc-c54c-4daf-a13b-aec36b1127e6",
+                    "ClientId": "Finilio",
+                    "CategoryId": "3418af77-3f4b-4c4a-b86b-d7eabafa2024",
+                    "Question": "Development Schedule"
+                }
+            ],
+            "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7": [
+                {
+                    "UniqueId": "7933ea2f-db75-4a6e-8061-16148076c04a",
+                    "ClientId": "Finilio",
+                    "CategoryId": "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7",
+                    "Question": "User Involvement"
+                },
+                {
+                    "UniqueId": "894f6420-47f1-4121-b19e-19b235bc97fd",
+                    "ClientId": "Finilio",
+                    "CategoryId": "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7",
+                    "Question": "User Acceptance"
+                },
+                {
+                    "UniqueId": "9503f1ae-74da-4016-8363-c6ce23414a67",
+                    "ClientId": "Finilio",
+                    "CategoryId": "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7",
+                    "Question": "User Training Needs"
+                },
+                {
+                    "UniqueId": "4135fd97-adf6-4d16-b09d-53a25f53614b",
+                    "ClientId": "Finilio",
+                    "CategoryId": "35ea1e2a-f1f2-435d-9a85-933c9f7ea0e7",
+                    "Question": "User Justification"
+                }
+            ],
+            "c628e1f3-0363-434c-bfd9-f46e43226a2e": [
+                {
+                    "UniqueId": "7bd78f92-c2c2-4c2f-8062-9303204c391d",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c628e1f3-0363-434c-bfd9-f46e43226a2e",
+                    "Question": "Political Influences"
+                },
+                {
+                    "UniqueId": "030523c0-87ea-4b7a-b452-62904ca9a5db",
+                    "ClientId": "Finilio",
+                    "CategoryId": "c628e1f3-0363-434c-bfd9-f46e43226a2e",
+                    "Question": "Short Term Solution"
+                }
+            ]
+        },
+        "questionFeedbacks": {
+            "f7b52b83-7a4c-408c-a293-273dda5e86ce": [
+                {
+                    "UniqueId": "44c5f206-1d15-4c74-83c7-597d105c52e4",
+                    "ClientId": "Finilio",
+                    "ProjectId": "e8d95bef-4a9f-4da6-a011-998ca06364f0",
+                    "UserId": "9e326855-d266-41c7-b820-5b4026b38b62",
+                    "CategoryId": "c5310da8-cf4f-4ee5-9c6e-1780d828ffe6",
+                    "CategoryQuestionId": "f7b52b83-7a4c-408c-a293-273dda5e86ce",
+                    "Rating": "4",
+                    "Comments": "null",
+                    "ResponseDateTime": "2024-01-20 22:33:21.113760+00:00"
+                }
+            ]
+        }
+    },
+    "version": 0
+}
