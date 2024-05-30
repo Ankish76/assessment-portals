@@ -14,6 +14,11 @@
     ],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "dev": {
+      "dependsOn": ["symbolic-link-delete", "symbolic-link-create"]
+    }
+  },
   "plugins": [
     {
       "plugin": "@nx/next/plugin",

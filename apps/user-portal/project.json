@@ -1,9 +1,37 @@
 {
-  "name": "user-portal",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/user-portal",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project user-portal --web",
-  "targets": {}
+	"name": "user-portal",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/user-portal",
+	"projectType": "application",
+	"tags": [],
+	"// targets": "to see all targets run: nx show project user-portal --web",
+	"targets": {
+		"dev:turbo": {
+			"command": "next dev apps/user-portal --turbo"
+		},
+		"build": {
+			"command": "nx run user-portal:symbolic-link-delete && nx run user-portal:symbolic-link-create && nx run user-portal:build"
+		},
+		"symbolic-link-delete": {
+			"command": "node apps/user-portal/symbolic-link-delete.js"
+		},
+		"symbolic-link-create": {
+			"command": "node apps/user-portal/symbolic-link-create.js"
+		},
+		"analyze": {
+			"command": "cross-env ANALYZE=true next build apps/user-portal"
+		},
+		"analyze-server": {
+			"command": "cross-env BUNDLE_ANALYZE=server next build apps/user-portal"
+		},
+		"analyze-browser": {
+			"command": "cross-env BUNDLE_ANALYZE=browser next build apps/user-portal"
+		},
+		"format": {
+			"command": "prettier --write apps/user-portal/src apps/user-portal/client"
+		},
+		"postbuild": {
+			"command": "next-sitemap --config apps/user-portal/next-sitemap-config.js"
+		}
+	}
 }
