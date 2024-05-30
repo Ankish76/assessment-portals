@@ -80,6 +80,7 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 								className="text-blue-700 border border-gray-300 focus:ring-1 focus:outline-none  font-medium rounded-full text-sm p-1 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
 							>
 								<Avatar
+									size="xs"
 									img="/assets/user.jpg"
 									alt="avatar"
 									rounded

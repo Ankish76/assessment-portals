@@ -48,7 +48,18 @@ api.jsonc
 
 
 
-symbolic-link-tracker.txt
+# symbolic-link-tracker.txt
 # symbolic links start
-./apps/assessment-portal/Dockerfile,./apps/assessment-portal/public/assets/logo.svg,./apps/assessment-portal/public/favicon.ico,./apps/assessment-portal/src/constants/info.ts,./apps/assessment-portal/src/constants/sideNav.ts,./apps/assessment-portal/tailwind.config.ts
+/Dockerfile
+/public/assets/logo.svg
+/public/favicon.ico
+/src/constants/info.ts
+/src/constants/sideNav.ts
+/tailwind.config.ts
+/Dockerfile
+/public/assets/logo.svg
+/public/favicon.ico
+/src/constants/info.ts
+/src/constants/sideNav.ts
+/tailwind.config.ts
 # symbolic links end

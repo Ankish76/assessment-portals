@@ -10,9 +10,8 @@ const {
 } = require("fs");
 const { env } = require("process");
 const fs = require("fs");
-const readline = require("readline");
 
-const tracker = "symbolic-link-tracker.txt";
+const tracker = `${__dirname}/symbolic-link-tracker.txt`;
 const createSymbolicLink = (target, path, type) => {
 	if (path && existsSync(path)) {
 		return;
@@ -24,7 +23,7 @@ const createSymbolicLink = (target, path, type) => {
 	);
 };
 
-const getAvailableClientIds = readdirSync("client").map(path =>
+const getAvailableClientIds = readdirSync(`${__dirname}/client`).map(path =>
 	path.toLowerCase(),
 );
 
@@ -34,7 +33,7 @@ if (clientId) {
 	if (!getAvailableClientIds.includes(clientId)) {
 		console.error(
 			"Invalid env value for NEXT_PUBLIC_CLIENT_ID, the only valid values are: " +
-				getAvailableClientIds,
+			getAvailableClientIds,
 		);
 		throw "Invalid env variables";
 	}
@@ -49,20 +48,19 @@ if (clientId) {
 console.log(`clientId is '${clientId}'`);
 
 // Creating required client folders if they are missing
-const rootPath = `client/${clientId}`;
+const rootPath = `${__dirname}/client/${clientId}`;
 if (!existsSync(rootPath)) {
 	mkdirSync(rootPath, { recursive: true });
 }
 
 const updateGitIgnore = () => {
-	const filePath = ".gitignore";
+	const filePath = `${__dirname}/.gitignore`;
 	const startPattern = "# symbolic links start";
 	const endPattern = "# symbolic links end";
-	let contentToAppend = readFileSync(tracker, "utf-8")
+	const contentToAppend = readFileSync(tracker, "utf-8")
 		.toString()
 		.split("\n")
-		.filter(m => m.trim());
-	contentToAppend = contentToAppend.map(m => `./${m}`);
+		.filter(m => m.trim()).map(m => `/${m}`).join("\n");
 	try {
 		// Read the content of the file synchronously
 		const data = fs.readFileSync(filePath, "utf8");
@@ -77,7 +75,6 @@ const updateGitIgnore = () => {
 		const updatedData = data.replace(pattern, (match, group) => {
 			return `${startPattern}\n${contentToAppend}\n${endPattern}`;
 		});
-
 		// Write the updated content back to the file
 		fs.writeFileSync(filePath, updatedData, "utf8");
 		console.log(
@@ -92,7 +89,8 @@ const generateSymbolicLinks = dirPath => {
 	readdirSync(dirPath).forEach(path => {
 		const fullPath = `${dirPath}/${path}`;
 		const stats = lstatSync(fullPath);
-		const p = fullPath.replace(`${rootPath}/`, "");
+		let p = fullPath.replace(`${rootPath}/`, "");
+		p = `${__dirname}/${p}`
 		if (stats.isFile()) {
 			createSymbolicLink(fullPath, p, "file");
 		} else {

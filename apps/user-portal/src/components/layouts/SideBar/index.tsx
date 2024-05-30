@@ -22,25 +22,25 @@ export const DashboardSidebar: React.FC = () => {
 	const user = useStore(m => m.user);
 	const router = useRouter();
 	const path = usePathname();
-	useEffect(() => {
-		const userData = localStorage.getItem("userData");
-		if (user?.UniqueId || (userData && JSON.parse(userData)?.UniqueId)) {
-			let projectPath: any = "";
-			if (path.split("/").length > 1)
-				projectPath = projects.find(
-					pro => pro.ProjectId === path.split("/")[1],
-				)?.ProjectId;
-			if (projectPath) {
-				setSelectedProject(projectPath);
-			}
-			user?.UniqueId
-				? getAllUserProjects(user?.UniqueId)
-				: userData &&
-					getAllUserProjects(JSON.parse(userData)?.UniqueId);
-		} else {
-			router.push("/login");
-		}
-	}, [user]);
+	// useEffect(() => {
+	// 	const userData = localStorage.getItem("userData");
+	// 	if (user?.UniqueId || (userData && JSON.parse(userData)?.UniqueId)) {
+	// 		let projectPath: any = "";
+	// 		if (path.split("/").length > 1)
+	// 			projectPath = projects.find(
+	// 				pro => pro.ProjectId === path.split("/")[1],
+	// 			)?.ProjectId;
+	// 		if (projectPath) {
+	// 			setSelectedProject(projectPath);
+	// 		}
+	// 		user?.UniqueId
+	// 			? getAllUserProjects(user?.UniqueId)
+	// 			: userData &&
+	// 				getAllUserProjects(JSON.parse(userData)?.UniqueId);
+	// 	} else {
+	// 		router.push("/login");
+	// 	}
+	// }, [user]);
 
 	const { isCollapsed } = useSidebarContext();
 	const getAllProjectRoleCategories = useStore(

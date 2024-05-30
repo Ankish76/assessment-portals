@@ -41,12 +41,12 @@ export const DashboardSidebar: React.FC = () => {
 		}
 	}, []);
 
-	useEffect(() => {
-		const userData = localStorage.getItem("AssessmentUserData");
-		if (!userData) {
-			router.push("/login");
-		}
-	}, []);
+	// useEffect(() => {
+	// 	const userData = localStorage.getItem("AssessmentUserData");
+	// 	if (!userData) {
+	// 		router.push("/login");
+	// 	}
+	// }, []);
 
 	const handleNavigate = (url: string) => {
 		push(url);

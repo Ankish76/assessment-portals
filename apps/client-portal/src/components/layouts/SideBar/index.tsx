@@ -38,12 +38,12 @@ export const DashboardSidebar: React.FC = () => {
 		}
 	}, []);
 
-	useEffect(() => {
-		const userData = localStorage.getItem("adminUserData");
-		if (!userData) {
-			router.push("/login");
-		}
-	}, []);
+	// useEffect(() => {
+	// 	const userData = localStorage.getItem("adminUserData");
+	// 	if (!userData) {
+	// 		router.push("/login");
+	// 	}
+	// }, []);
 
 	const handleNavigate = (url: string) => {
 		push(url);

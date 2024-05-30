@@ -23,7 +23,7 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 	const router = useRouter();
 	const handleLogout = () => {
 		userLogout();
-		localStorage.removeItem('userData')
+		localStorage.removeItem("userData");
 		router.push("/login");
 	};
 	return (
@@ -50,7 +50,10 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 									<HiX className="h-6 w-6" />
 								)}
 							</button> */}
-							<Navbar.Brand href="/" onClick={e=> e.preventDefault()}>
+							<Navbar.Brand
+								href="/"
+								onClick={e => e.preventDefault()}
+							>
 								{/* <p className="text-3xl font-mono font-bold">
 									Aadya
 									<span
@@ -60,7 +63,11 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 										Tek
 									</span>
 								</p> */}
-								<img src="/assets/images/dmv_logo.jpg" alt="" className="h-16 min-w-28"/>
+								<img
+									src="/assets/images/dmv_logo.jpg"
+									alt=""
+									className="h-16 min-w-28"
+								/>
 								{/* <span className="self-center whitespace-nowrap px-3 text-xl font-semibold dark:text-white">
 									Flowbite
 								</span> */}
@@ -73,7 +80,13 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 								type="button"
 								className="text-blue-700 border border-gray-300 focus:ring-1 focus:outline-none  font-medium rounded-full text-sm p-1 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
 							>
-								<Avatar img="/assets/images/user.jpg" alt="avatar" rounded /> &nbsp;
+								<Avatar
+									img="/assets/images/user.jpg"
+									alt="avatar"
+									size="xs"
+									rounded
+								/>{" "}
+								&nbsp;
 								<HiArrowDown />
 							</button>
 							{showLogout && (

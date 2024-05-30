@@ -1,23 +1,23 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "jsx": "preserve",
-    "allowJs": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true,
-    "target": "es5",
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"jsx": "preserve",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"incremental": true,
+		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"skipLibCheck": true,
 		"module": "esnext",
 		"moduleResolution": "bundler",
-    "baseUrl": ".",
-    "paths": {
+		"baseUrl": ".",
+		"paths": {
 			"@root/*": ["./src/*"],
 			"@constants/*": ["./src/constants/*"],
 			"@components/*": ["./src/components/*"],
@@ -27,30 +27,27 @@
 			"@helpers/*": ["./src/helpers/*"],
 			"@lib/*": ["./src/lib/*"]
 		},
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "types": [
-      "jest",
-      "node"
-    ]
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.jsx",
-    "../../apps/assessment-portal/.next/types/**/*.ts",
-    "../../dist/apps/assessment-portal/.next/types/**/*.ts",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "jest.config.ts",
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"types": ["jest", "node"]
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.js",
+		"**/*.jsx",
+		"../../apps/assessment-portal/.next/types/**/*.ts",
+		"../../dist/apps/assessment-portal/.next/types/**/*.ts",
+		"next-env.d.ts",
+		".next/types/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"jest.config.ts",
+		"**/*.spec.ts",
+		"**/*.test.ts"
+	]
 }

@@ -1,21 +1,27 @@
-const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
-const { join } = require('path');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { createGlobPatternsForDependencies } = require("@nx/react/tailwind");
+const { join } = require("path");
 import flowbite from "flowbite/plugin";
 import headlessui from "@headlessui/tailwindcss";
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    join(
-      __dirname,
-      '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'
-    ),
-    "./node_modules/flowbite-react/lib/**/*.js",
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+	content: [
+		"./src/**/*.{js,ts,jsx,tsx,mdx}",
+		"./node_modules/flowbite-react/lib/**/*.js",
 		"./public/**/*.html",
 		"./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
-    ...createGlobPatternsForDependencies(__dirname),
-  ],
-  theme: {
+		join(
+			__dirname,
+			"{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}",
+		),
+		"./node_modules/flowbite-react/lib/**/*.js",
+		"./public/**/*.html",
+		"./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
+		...createGlobPatternsForDependencies(__dirname),
+	],
+	theme: {
 		extend: {
 			colors: {
 				gray: {
@@ -237,3 +243,5 @@ module.exports = {
 	},
 	plugins: [flowbite, headlessui],
 };
+
+export default config;

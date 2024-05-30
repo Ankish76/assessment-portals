@@ -67,7 +67,7 @@ const LoginForm = () => {
 							backgroundImage: `url("https://cdn.clareitysecurity.net/sys/hgar/HGAR_loginD42.png")`,
 						}}
 					></div>
-					<div
+					{/* <div
 						className="circle bg-cover 4xl:hidden 3xl:block xl:block lg:block md:block hidden fixed bg-no-repeat h-full z-10"
 						style={{
 							backgroundPositionX: "right",
@@ -76,7 +76,7 @@ const LoginForm = () => {
 							width: "100vh",
 							backgroundImage: `url("https://cdn.clareitysecurity.net/login-theme/slate-bg-xl.png")`,
 						}}
-					></div>
+					></div> */}
 
 					<div className="login-section absolute xl:right-16 lg:right-16 md:right-16 right-0 mx-auto mt-40 z-20 ml-5 ">
 						<div

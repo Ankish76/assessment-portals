@@ -24,9 +24,9 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 	const router = useRouter();
 	const handleLogout = () => {
 		userLogout();
-		localStorage.removeItem('adminUserData')
+		localStorage.removeItem("adminUserData");
 		router.push("/login");
-	}
+	};
 
 	return (
 		<header>
@@ -74,13 +74,20 @@ export const DashboardNavbar: React.FC<Record<string, never>> = function () {
 								type="button"
 								className="text-blue-700 border border-gray-300 focus:ring-1 focus:outline-none  font-medium rounded-full text-sm p-1 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
 							>
-								<Avatar img="/assets/user.jpg" alt="avatar" rounded /> &nbsp;
+								<Avatar
+									img="/assets/user.jpg"
+									size="xs"
+									alt="avatar"
+									rounded
+								/>{" "}
+								&nbsp;
 								<HiArrowDown />
 							</button>
 							{showLogout && (
 								<div
-									className={`border bg-dark-100 shadow-xl ${showLogout ? "flex" : "hidden"
-										} gap-1 items-center px-7 py-2 rounded absolute top-16 right-7 z-20`}
+									className={`border bg-dark-100 shadow-xl ${
+										showLogout ? "flex" : "hidden"
+									} gap-1 items-center px-7 py-2 rounded absolute top-16 right-7 z-20`}
 								>
 									<button
 										onClick={handleLogout}

@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { createGlobPatternsForDependencies } = require("@nx/react/tailwind");
+const { join } = require("path");
 import flowbite from "flowbite/plugin";
 import headlessui from "@headlessui/tailwindcss";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +12,14 @@ const config: Config = {
 		"./node_modules/flowbite-react/lib/**/*.js",
 		"./public/**/*.html",
 		"./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
+		join(
+			__dirname,
+			"{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}",
+		),
+		"./node_modules/flowbite-react/lib/**/*.js",
+		"./public/**/*.html",
+		"./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
+		...createGlobPatternsForDependencies(__dirname),
 	],
 	theme: {
 		extend: {
