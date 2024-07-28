@@ -50,4 +50,17 @@ api.jsonc
 
 # symbolic-link-tracker.txt
 # symbolic links start
+/Dockerfile
+/public/assets/logo.svg
+/public/favicon.ico
+/src/constants/info.ts
+/src/constants/sideNav.ts
+/tailwind.config.ts
+/tailwind.config.ts
+/Dockerfile
+/public/assets/logo.svg
+/public/favicon.ico
+/src/constants/info.ts
+/src/constants/sideNav.ts
+/tailwind.config.ts
 # symbolic links end

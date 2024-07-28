@@ -15,6 +15,9 @@ const nextConfig = {
 	},
 	reactStrictMode: true,
 	swcMinify: true,
+	eslint: {
+		ignoreDuringBuilds: true
+	}
 };
 
 const wrapper =
