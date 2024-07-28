@@ -1,10 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -18,18 +15,8 @@
     "sharedGlobals": []
   },
   "targetDefaults": {
-    "dev": {
-      "dependsOn": [
-        "symbolic-link-delete",
-        "symbolic-link-create"
-      ]
-    },
-    "build": {
-      "dependsOn": [
-        "symbolic-link-delete",
-        "symbolic-link-create"
-      ]
-    }
+    "dev": { "dependsOn": ["symbolic-link-delete", "symbolic-link-create"] },
+    "build": { "dependsOn": ["symbolic-link-delete", "symbolic-link-create"] }
   },
   "plugins": [
     {
@@ -41,32 +28,12 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ],
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "tailwind",
-        "linter": "eslint"
-      }
-    }
+    "@nx/next": { "application": { "style": "tailwind", "linter": "eslint" } }
   },
-  "nxCloudAccessToken": "OTRjOTczYTgtMmQyZS00NTFiLTk1NGItMTcwNjJjOGY5ZTRkfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "YmZjMWIzMzUtZTM1Zi00NmZiLWIyYmEtZjNlNTc0Zjc4OTNjfHJlYWQtd3JpdGU="
 }
