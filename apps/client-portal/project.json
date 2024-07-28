@@ -4,7 +4,6 @@
 	"sourceRoot": "apps/client-portal",
 	"projectType": "application",
 	"tags": [],
-	"// targets": "to see all targets run: nx show project client-portal --web",
 	"targets": {
 		"dev:turbo": {
 			"command": "next dev apps/client-portal --turbo"

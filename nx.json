@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -16,10 +19,16 @@
   },
   "targetDefaults": {
     "dev": {
-      "dependsOn": ["symbolic-link-delete", "symbolic-link-create"]
+      "dependsOn": [
+        "symbolic-link-delete",
+        "symbolic-link-create"
+      ]
     },
     "build": {
-      "dependsOn": ["symbolic-link-delete", "symbolic-link-create"]
+      "dependsOn": [
+        "symbolic-link-delete",
+        "symbolic-link-create"
+      ]
     }
   },
   "plugins": [

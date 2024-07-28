@@ -1,1 +1,0 @@
-D:/Projects/Ankish/questionnaire/apps/client-portal/client/finilio/tailwind.config.ts
