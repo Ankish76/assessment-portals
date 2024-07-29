@@ -76,10 +76,13 @@ const RiskList: React.FC = () => {
 							</p>
 						</div>
 						<div className="overflow-x-auto mt-3">
-							<Table hoverable>
+							<Table>
 								<Table.Head>
 									{TableHeaders?.map((el: any) => (
-										<Table.HeadCell className="bg-accent hover:bg-gray-300" key={el.label}>
+										<Table.HeadCell
+											className="bg-accent hover:bg-gray-300"
+											key={el.label}
+										>
 											{el.label}
 										</Table.HeadCell>
 									))}
