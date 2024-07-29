@@ -106,7 +106,7 @@ const RiskList: React.FC = () => {
 							/>
 						</div>
 						<div className="overflow-x-auto mt-3">
-							<Table className="rounded-none">
+							<Table className="rounded-none table-no-drop">
 								<Table.Head>
 									{TableHeaders?.map((el: any) => (
 										<Table.HeadCell
