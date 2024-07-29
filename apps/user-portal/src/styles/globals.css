@@ -28,6 +28,6 @@ body {
 	background: #888;
 }
 
-.table-no-drop > div {
-	display: none;
+.table-no-drop > div > div {
+	display: none !important;
 }
